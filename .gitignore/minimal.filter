@@ -1,0 +1,143 @@
+
+# Interest
+Show
+	Rarity Unique
+	SetFontSize 45
+Show
+	ElderItem True
+	SetFontSize 45
+Show
+	ShaperItem True
+	SetFontSize 45
+
+Show
+	BaseType "Two-Toned Boots"
+	Rarity >= Rare
+	SetFontSize 40
+	SetBorderColor 255 0 255
+
+
+# Regal
+Show
+	Class Belt Armours Helmet Glove Boot Ring Amulet Claw Wand
+	Rarity Rare
+	ItemLevel >= 75
+	SetFontSize 45
+	SetBorderColor 255 0 0
+	SetTextColor 255 0 0
+# Chaos
+Show
+	Class Belt Armours Helmet Glove Boot Ring Amulet Claw Wand
+	Rarity Rare
+	ItemLevel >= 60
+	SetFontSize 45
+	SetBorderColor 255 0 0
+	SetTextColor 255 0 0
+
+
+# Jewelry
+Show
+	Class Belt
+	Rarity >= Rare
+	SetFontSize 45
+	SetBorderColor 255 0 255
+Show
+	Class Ring Amulet
+	Rarity Rare Unique
+#	Rarity Normal Rare Unique
+	SetFontSize 45
+	SetBorderColor 255 0 255
+	PlayAlertSound 7 300
+Show
+	Class Jewel "Utility Flask"
+	SetFontSize 45
+	SetBorderColor 255 0 255
+
+# Drop-only gems
+Show 
+	Class Skill
+	BaseType "Added Chaos Damage" "Detonate Mines" "Empower" "Enhance" "Enlighten" "Portal" "Vaal"
+	SetBorderColor 255 0 255
+	SetTextColor 255 0 255
+	SetFontSize 45
+	PlayAlertSound 7 300
+
+
+# Currencies
+#Show
+Hide
+	Class Currency
+	BaseType "Scroll of Wisdom" "Portal Scroll" "Simple Steel Net" "Reinforced Iron Net" "Strong Iron Net" "Reinforced Steel Net"
+	SetFontSize 42
+	SetBackgroundColor 255 255 255
+	#PlayAlertSound 7 300
+Show
+	Class Currency Divination Relics Maps Labyrinth Maps Map Leaguestones Soul Quest Piece
+	SetFontSize 45
+	SetBorderColor 255 0 255
+	SetTextColor 255 0 255
+	PlayAlertSound 7 300
+Show
+	LinkedSockets 6
+	SetFontSize 45
+	SetBorderColor 255 0 255
+	SetTextColor 255 0 255
+	PlayAlertSound 7 300
+Show
+	Sockets 6
+	SetFontSize 45
+	SetBorderColor 255 0 255
+	SetTextColor 255 0 255
+	PlayAlertSound 7 300
+Show
+	SocketGroup RGB
+	Width 1
+	SetFontSize 42
+	SetBackgroundColor 255 255 255
+	PlayAlertSound 7 300
+Show
+	SocketGroup RGB
+	Height 2
+	SetFontSize 42
+	SetBackgroundColor 255 255 255
+	PlayAlertSound 7 300
+Show
+	Class Flask
+	Quality >= 14
+	SetFontSize 45
+	SetBorderColor 255 0 255
+	SetTextColor 255 0 255
+Show
+	Class Skill
+	Quality >= 5
+	SetFontSize 45
+	SetBorderColor 255 0 255
+	SetTextColor 255 0 255
+Show
+	BaseType "Stone Hammer" "Rock Breaker" "Gavel"
+	Rarity Normal
+	SetFontSize 45
+	SetBorderColor 255 0 255
+	SetTextColor 255 0 255
+
+
+# Show only late game life/mana flasks.
+Show
+	Class "Mana Flask" "Life Flask"
+	BaseType Eternal Hallowed
+	SetFontSize 30
+Show
+	Class "Hybrid Flask"
+	BaseType Hallowed
+	SetFontSize 30
+Hide
+	Class "Mana Flask" "Life Flask"
+Hide
+	Class Skill
+
+Hide
+	Class Bow Axe Sword Staves Claws Daggers Mace Quiver Armours Helmet Boot Shield Sceptres Glove Wand Belt Ring Amulet
+	Rarity <= Magic
+
+Hide
+	Class Bow Staves Sceptres Quiver Axe Sword
